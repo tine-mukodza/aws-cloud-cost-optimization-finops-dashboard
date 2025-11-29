@@ -23,7 +23,7 @@ The report is split into **two pages**:
 ## **Page 1 - Executive Cost Summary**
 **File:** `page1_summary.png`
 
-![Page 1 Screenshot](page1_summary.png)
+![Overview Page](overview_page.png)
 
 ### Key Features
 - Total AWS Spend  
@@ -44,7 +44,7 @@ The report is split into **two pages**:
 ## **Page 2 - Optimization Insights**
 **File:** `page2_insights.png`
 
-![Page 2 Screenshot](page2_insights.png)
+![Optimization Insights Page](optimization_insights_page.png)
 
 ### Optimization KPIs
 - **Estimated Savings (On-Demand → SP)**  
