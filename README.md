@@ -141,7 +141,7 @@ These may indicate one-off workloads, inefficient ETL pipelines, or unexpected d
 
 ~Reducing data-transfer inefficiencies 
 
-## 📘 What I Learned
+## What I Learned
 - Building multi-page Power BI dashboards with consistent visual structure
 - Creating KPI cards using custom DAX (AVERAGEX, MAXX, DISTINCTCOUNT, STDEVX.S)
 - Applying FinOps concepts: rightsizing, savings plans evaluation, and cost optimization
