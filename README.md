@@ -45,7 +45,7 @@ This page gives leadership a high-level understanding of cloud spend, drivers, a
 ## **Page 2 - Optimization Insights**
 **File:** `page2_insights.png`
 
-![Optimization Insights Page](optimization_insights_page.png)
+![Optimization Insights Page]()
 
 ### Optimization KPIs
 - **Estimated Savings (On-Demand → SP)**  
