@@ -1,8 +1,8 @@
 ### *AWS Cloud Spend Intelligence – FinOps Analytics & Optimization Dashboard*
 
-This project delivers an end-to-end analysis of AWS cloud spend for October 2025 using Power BI, aligned with FinOps Foundation best practices.
-It includes detailed cost allocation, tag-based visibility, EC2 rightsizing analysis, anomaly detection, and modeled savings from Reserved Instances and Savings Plans.
-The dashboard uses custom DAX measures, KPI cards, and multi-page interactive visuals to highlight cost drivers, inefficiencies, and optimization opportunities for more cost-efficient cloud operations.
+This project delivers a full-cycle FinOps analysis of AWS cloud spending for October 2025, built using Power BI and aligned with FinOps Foundation practices. It combines Spend Intelligence, cost optimization modeling, resource rightsizing analysis, tagging health, anomaly detection, and cost-efficiency insights into a multi-page analytics dashboard.
+
+The solution includes custom DAX measures, KPI engineering, allocation logic, EC2 utilization scoring, and scenario-based savings models (e.g., Savings Plans vs On-Demand). The dashboard reveals cost drivers, highlights waste, and provides actionable recommendations for improving the financial sustainability of cloud workloads.
 
 
 ---
