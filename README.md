@@ -1,23 +1,33 @@
 ### *AWS Cloud Spend Intelligence – FinOps Analytics & Optimization Dashboard*
 
-This project delivers a full-cycle FinOps analysis of AWS cloud spending for October 2025, built using Power BI and aligned with FinOps Foundation practices. It combines Spend Intelligence, cost optimization modeling, resource rightsizing analysis, tagging health, anomaly detection, and cost-efficiency insights into a multi-page analytics dashboard.
+This project delivers a complete FinOps Cost Intelligence Dashboard analyzing AWS spending for October 2025, built end-to-end in Power BI using FinOps Foundation principles.
 
-The solution includes custom DAX measures, KPI engineering, allocation logic, EC2 utilization scoring, and scenario-based savings models (e.g., Savings Plans vs On-Demand). The dashboard reveals cost drivers, highlights waste, and provides actionable recommendations for improving the financial sustainability of cloud workloads.
+It provides:
 
+Cost visibility
+
+- Optimization modeling
+- Rightsizing insights
+- Tagging health
+- Pricing model efficiency
+- Daily anomalies & waste signals
+  
+The dashboard uses curated DAX measures, KPI engineering, allocation logic, and spend modeling (On-Demand → Savings Plans) to identify cost drivers and expose optimization opportunities.
 
 ---
 
 ##  Project Overview
 
-The FinOps dashboard uncovers:
-- Total AWS spend across services, regions, pricing models, and usage types  
-- High-cost drivers contributing to overall cloud cost  
-- Rightsizing and Savings Plan optimization opportunities  
-- Daily anomalies and unusual spend patterns  
-- Estimated savings from switching On-Demand workloads to Savings Plans
+This FinOps dashboard uncovers:
 
-The solution is structured across two analytical pages, each with a strategic purpose.
+- Total AWS spend across services, regions, usage types, and pricing models
+- Which workloads drive the highest cost
+- Where resources are over-provisioned
+- Which services should move to Savings Plans/Reserved
+- Daily spend anomalies caused by unusual workloads
+- Monthly savings opportunities from tuning compute, storage, and data transfer
 
+The solution is organized into two analytical pages, each with a strategic purpose.
 ---
 
 ## **Page 1 - Executive Cost Summary**
@@ -25,21 +35,23 @@ The solution is structured across two analytical pages, each with a strategic pu
 
 ![Overview Page](overview_page.png)
 
+This page gives management a high-level understanding of cloud spend, drivers, and patterns.
 ### Key Features
-- Total AWS Spend  
-- Average & Maximum Daily Cost  
-- Number of Active Services  
-- Regions in Use  
-- Production Cost %  
-- Average Cost per Service  
-- Daily Cost trend
-- Spend by Pricing Model  
-- Spend by Environment (Prod/Stage/Dev)  
-- Top Services by Cost  
-- Spend by Region  
-- Spend by Usage Type
-  
-This page gives leadership a high-level understanding of cloud spend, drivers, and patterns.
+- Total AWS Spend
+- Key Features
+- Total AWS Spend (Oct 2025)
+- Average & Max Daily Cost
+- Active Services
+- Active Regions
+- Production Cost %
+- Average Cost per Service
+- Daily Spend Trend
+- Cost by Pricing Model
+- Cost by Environment (Prod/Stage/Dev)
+- Top Services by spend
+- Top Regions by spend
+- Cost by UsageType
+
 ---
 
 ## **Page 2 - Optimization Insights**
@@ -47,21 +59,27 @@ This page gives leadership a high-level understanding of cloud spend, drivers, a
 
 ![Optimization Insights Page](optimization_insights_page.png)
 
-### Optimization KPIs
-- **Estimated Savings (On-Demand → SP)**  
-- Rightsizing %  
-- Daily Cost Standard Deviation (StDev)  
-- Optimization summary & Recommendations  
-
-### Deep-Dive Visuals
-- Cost Drivers by Service  
-- Cost Drivers by Region  
-- Cost by Usage Type  
-- Daily Anomaly Detection   
-- Spend by Tag: Environment  
-- Spend by Pricing Model  
-
 This page transforms raw billing data into actionable optimization strategies.
+
+### Optimization KPIs
+- Estimated Savings (On-Demand → Savings Plans): $10.9K
+- Rightsizing Opportunity: 22%
+- Daily Cost StdDev: $518.30
+- Monthly Spend: $50.12K  
+
+### Cost Driver Deep-Dives
+- Cost Drivers by Service
+- Spend by ServiceName
+- Spend by Region
+- Spend by UsageType
+- Spend by Tag — Environment
+- Spend by Pricing Model
+  
+##*Waste & Anomaly Detection*
+
+- Daily spend anomalies (spikes > 2× baseline)
+- Staging/Development environments showing unnecessary cost
+- Over-provisioned compute/storage services
 ---
 
 ##  **Key DAX Measures Used**
@@ -107,19 +125,19 @@ STDEVX.S(
 )
 ```
 # Insights Summary (Business + Technical)
-## 1.Cost Drivers
+## 1.Major Cost Drivers
 
 - Highest spend from AWS Glue, Redshift, RDS, and EC2
 - Primary region: US-East-1
-- Usage cost is dominated by TimedStorage-GB, DataTransfer-Out, Requests
-- On-Demand pricing accounts for ~72% of total cost
-
+- Heavy usage types: TimedStorage-GB, DataTransfer-Out, Requeststs
+- 72% of spend is On-Demand → strong optimization opportunity
+  
 ## 2.Optimization Opportunities
 
 - Converting On-Demand to Savings Plans yields ~30% savings
-- Rightsizing analysis shows ~22% optimization potential
-- Staging/Dev environments show non-critical over-provisioned workloads
-- Data transfer inefficiencies create unnecessary cost spikes
+- Rightsize low-utilized compute/storage resources
+- Consolidate workloads across regions
+- Reduce large DataTransfer-Out workloads causing hidden cost spikes
 
 ## 3.Anomaly Detection
 
@@ -140,14 +158,22 @@ STDEVX.S(
 ~Reducing data-transfer inefficiencies 
 
 ## Skills Demonstrated
-- Developed multi-page Power BI dashboards with consistent UX and KPI design
-- Engineered custom DAX measures (AVERAGEX, MAXX, DISTINCTCOUNT, STDEVX.S) for analytical insightss
-- Applied FinOps principles such as rightsizing, cost visibility, and savings plan modeling
-- Identified cost drivers, usage inefficiencies, and high-spend AWS services via BI analysis
-- Built optimization recommendations aligned with cloud financial management practices
-- Documented the entire BI and FinOps workflow following professional GitHub standards
+- Built a multi-page Power BI dashboard with professional KPI layout and UX design
+- Engineered custom DAX measures (AVERAGEX, MAXX, DISTINCTCOUNT, STDEVX.S)
+- Applied FinOps best practices: savings modeling, rightsizing, tagging, anomaly detection
+- Identified cost drivers across services, regions, pricing models
+- Modeled savings from On-Demand → Savings Plans transitions
+- Interpreted AWS usage patterns (storage, compute, requests, data transfer)
+- Delivered a complete BI → FinOps → Optimization lifecycle
+- Packaged the project into a structured, professional GitHub repository
 
+---
+👨‍💻 Author
 
+Tinevimbo Mukodza
+MS Information Systems — Pace University
+FinOps & Business Intelligence Analytics Portfolio
+GitHub: https://github.com/tinemukodza/finops-analytics-portfolio
 
 
 
